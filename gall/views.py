@@ -1,19 +1,22 @@
 from django.shortcuts import render
-from .models import Posts
+from .models import Posts,Category
 # Create your views here.
 def index(request):
     posts = Posts.objects.all()
-    return render(request,'index.html',{'posts':posts,})
+    categories = Category.objects.all()
+    return render(request,'index.html',{"categories":categories,'images':posts,})
 
 def full_pic(request,pic_id):
     posts = Posts.objects.filter(id=pic_id)
     return render(request,'one.html',{'posts':posts})
 
-def locations(request,location_id):
-    posts = Posts.objects.filter(location_id=location_id)
+def category(request,category_id):
+    posts = Posts.objects.filter(category=category_id)
     return render(request,'location.html',{'posts':posts})
 
-
+# def categories(request):
+#     categories = Category.objects.all()
+#     return render(request,'navbar.html',{"categories":categories})
 
 def search_results(request):
     

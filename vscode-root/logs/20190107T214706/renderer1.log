@@ -1,0 +1,4 @@
+[2019-01-07 21:47:08.730] [renderer1] [info] no standard startup: not just one text editor
+[2019-01-07 21:47:09.196] [renderer1] [error] net::ERR_INTERNET_DISCONNECTED: {1}
+[2019-01-07 21:47:18.597] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
+[2019-01-07 21:47:44.478] [renderer1] [error] An unknown error occurred. Please consult the log for more details.

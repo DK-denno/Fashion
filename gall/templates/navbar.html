@@ -1,30 +1,22 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid" id="container1">
+      <h2 class="animated zoomIn" style="color:purple;" style="font-size: 200px;">FASHION GALLERY</h2><br>
+      <h3 class="animated zoomIn" style="color:purple;" style="font-size: 200px;">For the newest Fashions in town</h3>
+      
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="">GALLERY</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <!-- Adding a search form  -->
+    <div class="col-sm-4 col-md-4 navbar-right">
+      <form class="navbar-form" role="search" action="{% url 'search_results' %}">
 
-  <div class="collapse navbar-collapse" id="navbarColor02">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="{%url 'index'%}">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/location/1">Nairobi</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/location/2">Mombasa</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/location/3">Anywhere</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0" action="{%url 'search_results'%}" >
-      <input class="form-control mr-sm-2" name='image' id='image' type="text" placeholder="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-    </form>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search Image" name="image">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+    <!-- search form end -->
   </div>
 </nav>
-<br>
-<br>

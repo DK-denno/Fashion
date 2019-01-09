@@ -3,11 +3,11 @@ from django.db import models
 # Create your models here.
 
 
-class Location(models.Model):
-    location = models.CharField(max_length=50,unique=True)
+# class Location(models.Model):
+#     location = models.CharField(max_length=50,unique=True)
 
-    def __str__(self):
-        return self.location
+#     def __str__(self):
+#         return self.location
    
 
 class Category(models.Model):
@@ -22,7 +22,7 @@ class Posts(models.Model):
     name = models.CharField(max_length=50)
     description = models.CharField(max_length=50)
     article_image = models.ImageField(upload_to = 'articles/')
-    location = models.ForeignKey(Location)
+    # location = models.ForeignKey(Location)
     category = models.ManyToManyField(Category)
 
     class Meta:
