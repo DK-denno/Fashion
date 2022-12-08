@@ -5,7 +5,7 @@ binwalk==2.1.2
 blinker==1.4
 Brlapi==0.6.7
 Brotli==1.0.7
-certifi==2018.8.24
+certifi==2022.12.7
 chardet==3.0.4
 chrome-gnome-shell==0.0.0
 click==7.0.dev0
